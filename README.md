@@ -1,26 +1,26 @@
-# GitHub Training Workspace
+# EVA
 
-这是一个给团队做测试训练和协作上手用的仓库骨架。
+This repository is set up as a training workspace for team collaboration and onboarding.
 
-仓库被分成两条主线：
+It is split into two main areas:
 
-- `real-work/`：放真实任务、交付要求、评审流转和完成归档。
-- `practice-lab/`：给新手做低风险练习，熟悉 GitHub 的常见协作动作。
+- `real-work/`: real tasks, delivery requirements, review flow, and archived results.
+- `practice-lab/`: low-risk exercises for beginners to practice common GitHub workflows.
 
-## 适用场景
+## When To Use It
 
-- 新成员入组训练
-- GitHub 基础操作练习
-- 真实任务与练习任务分区管理
-- 维护者统一任务和 PR 入口
+- onboarding new team members
+- practicing GitHub basics
+- separating real work from beginner exercises
+- giving maintainers a consistent issue and PR entry point
 
-## 推荐使用方式
+## Recommended Path
 
-1. 新手先按顺序完成 `practice-lab/` 的练习。
-2. 通过 PR 完成至少一次修改、一次补充、一次修正。
-3. 熟悉流程后，再进入 `real-work/backlog/` 领取真实任务。
+1. Start with the exercises in `practice-lab/`.
+2. Complete at least one edit, one follow-up update, and one review fix through PRs.
+3. After that, move into `real-work/backlog/` to pick up real tasks.
 
-## 仓库结构
+## Repository Structure
 
 ```text
 .
@@ -44,24 +44,23 @@
 └─ CONTRIBUTING.md
 ```
 
-## 两条线的区别
+## The Two Tracks
 
 ### `real-work/`
 
-- 面向真实交付
-- 强调任务编号、完成标准、评审记录
-- 文件流转建议按 `backlog -> in-progress -> review -> done`
+- for real delivery work
+- uses task IDs, done criteria, and review records
+- suggested flow: `backlog -> in-progress -> review -> done`
 
 ### `practice-lab/`
 
-- 面向练习和训练
-- 每一级都尽量只练一个核心动作
-- 出错成本低，方便反复练习
+- for beginner practice and onboarding
+- each level focuses on one core collaboration action
+- safe to repeat and safe to make mistakes in
 
-## 从哪里开始
+## Start Here
 
-- 参与者先看 [CONTRIBUTING.md](./CONTRIBUTING.md)
-- 再看 [docs/workflow.md](./docs/workflow.md)
-- 新手从 [practice-lab/README.md](./practice-lab/README.md) 开始
-- 维护者看 [docs/maintainer-guide.md](./docs/maintainer-guide.md)
-
+- contributors: [CONTRIBUTING.md](./CONTRIBUTING.md)
+- workflow guide: [docs/workflow.md](./docs/workflow.md)
+- beginner entry: [practice-lab/README.md](./practice-lab/README.md)
+- maintainer guide: [docs/maintainer-guide.md](./docs/maintainer-guide.md)
