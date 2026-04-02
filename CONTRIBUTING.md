@@ -1,44 +1,65 @@
-# Contributing Guide
+# 贡献指南
 
-这个仓库把“练习”和“真实任务”拆开管理，请按对应流程参与。
+这个仓库把“真实任务”和“新手练习”分开管理，请按对应流程参与。
+
+## 先看哪一个目录
+
+- 想熟悉 GitHub：先去 `practice-lab/`
+- 想接真实任务：先去 `real-work/`
+- 想了解整体流程：先看 `docs/workflow.md`
 
 ## 分支命名建议
 
 - 练习任务：`practice/<your-name>-<level>`
 - 真实任务：`task/<task-id>-<short-name>`
-- 文档修订：`docs/<short-name>`
+- 文档修改：`docs/<short-name>`
+- 安全修复：`security/<short-name>`
 
-## Commit 建议
+## 提交信息建议
 
-尽量让 commit 一次只表达一件事，例如：
+一次提交尽量只表达一件事，便于 review 和回溯。
 
-- `docs: add self introduction for level 01`
-- `practice: finish level 02 team skills update`
-- `task: start RW-001 onboarding cleanup`
+示例：
 
-## Pull Request 基本要求
+- `docs: 完善新人入门说明`
+- `practice: 完成 level-02 分支与 PR 练习`
+- `task: 启动 RW-001 首页说明整理`
+- `security: 补充漏洞提报说明`
 
-- 说明本次属于 `practice-lab` 还是 `real-work`
-- 写清楚改了什么
-- 写清楚怎么验证
-- 如果有未完成项，直接写出来
+## PR 基本要求
 
-## 真实任务认领规则
+每个 PR 至少写清楚下面几件事：
 
-1. 先从 `real-work/backlog/` 选择任务。
-2. 把任务移到 `real-work/in-progress/` 或在任务文件里注明认领人。
-3. 完成后进入评审，再归档到 `real-work/done/`。
+- 这次改动属于 `practice-lab`、`real-work` 还是文档优化
+- 你改了什么
+- 你怎么验证的
+- 有没有还没完成的内容
+- 希望 reviewer 重点看哪里
+
+## 真实任务参与规则
+
+1. 先从 `real-work/backlog/` 认领任务。
+2. 把任务移到 `real-work/in-progress/`，或在任务文件中写明负责人。
+3. 完成后提交 PR，进入评审。
+4. 通过后归档到 `real-work/done/`。
 
 ## 新手练习规则
 
-1. 按 `practice-lab` 的关卡顺序做。
-2. 每次练习只聚焦一个动作，不要一次改太多文件。
-3. 收到 review 后，至少完成一次修正再合并。
+1. 按 `practice-lab` 的关卡顺序完成练习。
+2. 每次练习尽量只改指定文件，不要一次改太多内容。
+3. 收到 review 后，至少完成一轮修正再合并。
+4. 不确定时优先在 PR 描述里说明自己的想法和问题。
+
+## 评审建议
+
+- 指出问题时尽量具体，最好说明原因和修改方向
+- 对新人的反馈优先聚焦“是否理解流程”和“是否表达清楚”
+- 真实任务评审要重点检查完成标准、风险和验证方式
 
 ## 不建议的做法
 
-- 在 `practice-lab` 里直接改真实任务文件
-- 跳过 PR 直接提交到主分支
+- 在 `practice-lab` 中直接修改真实任务文件
+- 跳过 PR，直接把改动推到主分支
 - 同时认领多个真实任务但没有交付计划
-- 修改他人的进行中文件而没有提前沟通
-
+- 直接覆盖他人的进行中文件而没有提前沟通
+- 在公开页面粘贴密码、令牌、生产敏感数据

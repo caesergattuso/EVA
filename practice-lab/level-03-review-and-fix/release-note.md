@@ -1,16 +1,15 @@
-# Release Note Draft
+# 发布说明草稿
 
-## Summary
+## 概要
 
-TBD
+请补充这次发布的主要变化。
 
-## Changes
+## 变更内容
 
-- update some docs
-- fix something if needed
-- maybe add more later
+- 请把这里改成清晰、可执行的变更描述
+- 不要保留模糊表达
+- 删除所有占位语
 
-## Validation
+## 验证方式
 
-not checked yet
-
+请写明你做了哪些检查。

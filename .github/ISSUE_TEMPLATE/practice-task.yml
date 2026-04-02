@@ -1,5 +1,5 @@
-name: Practice Task
-description: 创建一个新手练习任务
+name: 新手练习任务
+description: 创建一个用于训练 GitHub 协作的新手练习任务
 title: "[PRACTICE] "
 labels:
   - practice
@@ -15,7 +15,7 @@ body:
     id: title
     attributes:
       label: 练习标题
-      placeholder: 例如：第一次修改文件
+      placeholder: 例如：第一次修改文件并提交 PR
     validations:
       required: true
   - type: textarea
@@ -39,4 +39,3 @@ body:
       description: 怎样判断这次练习通过
     validations:
       required: true
-

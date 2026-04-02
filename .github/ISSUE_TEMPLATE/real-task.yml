@@ -1,5 +1,5 @@
-name: Real Work Task
-description: 创建一个真实工作任务
+name: 真实任务
+description: 创建一个需要正式交付的真实任务
 title: "[REAL] "
 labels:
   - real-work
@@ -15,21 +15,21 @@ body:
     id: summary
     attributes:
       label: 任务标题
-      placeholder: 用一句话描述任务
+      placeholder: 用一句话说明要做什么
     validations:
       required: true
   - type: textarea
     id: goal
     attributes:
       label: 目标
-      description: 这件事完成后，结果应该是什么
+      description: 这件事完成后，希望得到什么结果
     validations:
       required: true
   - type: textarea
     id: deliverables
     attributes:
-      label: 交付物
-      description: 需要产出哪些文件、文档或结果
+      label: 交付内容
+      description: 需要产出哪些文件、文档、页面或结果
     validations:
       required: true
   - type: textarea
@@ -43,5 +43,4 @@ body:
     id: notes
     attributes:
       label: 备注
-      description: 依赖、风险、参考资料等
-
+      description: 依赖、风险、时间要求、参考资料等

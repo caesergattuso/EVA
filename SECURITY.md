@@ -1,21 +1,89 @@
-# Security Policy
+# 安全与漏洞提报
 
-## Supported Versions
+如果你发现了安全问题，请不要在公开 Issue 中直接披露细节。
 
-Use this section to tell people about which versions of your project are
-currently being supported with security updates.
+推荐使用 GitHub 的私密漏洞提报功能：`Security -> Advisories -> Report a vulnerability`。
 
-| Version | Supported          |
-| ------- | ------------------ |
-| 5.1.x   | :white_check_mark: |
-| 5.0.x   | :x:                |
-| 4.0.x   | :white_check_mark: |
-| < 4.0   | :x:                |
+## 谁适合提报
 
-## Reporting a Vulnerability
+- 新人测试同学
+- 参与练习的成员
+- 发现鉴权、权限、数据泄露、依赖风险等问题的任何贡献者
 
-Use this section to tell people how to report a vulnerability.
+## 推荐提报方式
 
-Tell them where to go, how often they can expect to get an update on a
-reported vulnerability, what to expect if the vulnerability is accepted or
-declined, etc.
+优先使用 GitHub 私密提报：
+
+1. 打开仓库页面
+2. 进入 `Security`
+3. 找到 `Report a vulnerability`
+4. 按页面提示填写漏洞信息并提交
+
+如果当前仓库没有显示该按钮，请联系维护者开启 `Private vulnerability reporting`。
+
+## 提报时建议填写哪些内容
+
+### 1. 标题
+
+用一句话说清问题，例如：
+
+- 未登录用户可访问测试接口
+- 某页面存在越权读取数据问题
+- 某依赖版本存在已知高危漏洞
+
+### 2. 问题描述
+
+建议写清：
+
+- 漏洞发生在哪里
+- 具体表现是什么
+- 为什么它有风险
+
+### 3. 复现步骤
+
+尽量按 1、2、3 的顺序描述，并写明：
+
+- 访问的页面或接口
+- 使用的账号或权限状态
+- 请求方式或操作路径
+- 实际看到的结果
+
+### 4. 影响范围
+
+说明问题可能影响：
+
+- 哪些用户
+- 哪些数据
+- 是否存在未授权访问、越权、泄露或篡改风险
+
+### 5. 建议修复方向
+
+即使不完全准确，也可以写出你的判断，例如：
+
+- 增加登录校验
+- 补充角色权限判断
+- 升级有风险的依赖版本
+- 对敏感信息做脱敏处理
+
+### 6. 证据材料
+
+建议附上：
+
+- 截图
+- 请求和响应示例
+- 日志片段
+- 复现录屏
+
+注意不要上传真实密码、密钥、生产令牌或完整敏感数据。
+
+## 我们的处理方式
+
+- 收到报告后，维护者会尽快确认是否可复现
+- 一般会先私下评估风险，再决定修复方案
+- 如果问题成立，会在修复完成后再考虑是否公开说明
+
+## 给新人的建议
+
+- 不确定是不是“漏洞”也可以先提报，不必担心说错
+- 尽量写清复现步骤，维护者最需要的是可复现信息
+- 不要把安全问题直接发到公开 Issue、讨论区或群聊截图里
