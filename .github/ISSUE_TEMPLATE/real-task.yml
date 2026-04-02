@@ -1,0 +1,47 @@
+name: Real Work Task
+description: 创建一个真实工作任务
+title: "[REAL] "
+labels:
+  - real-work
+body:
+  - type: input
+    id: task_id
+    attributes:
+      label: 任务编号
+      placeholder: RW-002
+    validations:
+      required: true
+  - type: input
+    id: summary
+    attributes:
+      label: 任务标题
+      placeholder: 用一句话描述任务
+    validations:
+      required: true
+  - type: textarea
+    id: goal
+    attributes:
+      label: 目标
+      description: 这件事完成后，结果应该是什么
+    validations:
+      required: true
+  - type: textarea
+    id: deliverables
+    attributes:
+      label: 交付物
+      description: 需要产出哪些文件、文档或结果
+    validations:
+      required: true
+  - type: textarea
+    id: done
+    attributes:
+      label: 完成标准
+      description: 满足哪些条件才算完成
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: 备注
+      description: 依赖、风险、参考资料等
+

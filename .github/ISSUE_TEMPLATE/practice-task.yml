@@ -1,0 +1,42 @@
+name: Practice Task
+description: 创建一个新手练习任务
+title: "[PRACTICE] "
+labels:
+  - practice
+body:
+  - type: input
+    id: level
+    attributes:
+      label: 练习等级
+      placeholder: level-01
+    validations:
+      required: true
+  - type: input
+    id: title
+    attributes:
+      label: 练习标题
+      placeholder: 例如：第一次修改文件
+    validations:
+      required: true
+  - type: textarea
+    id: objective
+    attributes:
+      label: 练习目标
+      description: 想让参与者学会什么
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 建议步骤
+      description: 请给出清晰的练习步骤
+    validations:
+      required: true
+  - type: textarea
+    id: check
+    attributes:
+      label: 完成标志
+      description: 怎样判断这次练习通过
+    validations:
+      required: true
+
